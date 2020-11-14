@@ -8,6 +8,7 @@
 </head>
 <body>
     <header style="background-image: url('/assets/img/home-hero.svg');" class="h-70 w-full py-8 px-20">
+        <!-- Navigation Area -->
         <nav class="flex flex-row justify-between">
             <a href="/" class="nav-brand">
                 <img src="/assets/img/Logo.svg" alt="Upshoot Technologies" class="h-10">
@@ -19,15 +20,31 @@
                 <li><a href="/contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="flex justify-center items-center mt-12">
+        <!-- CTA Area -->
+        <div class="flex flex-col justify-center items-center mt-16">
             <h2 class="text-2xl text-center text-white w-5/12">
                 Give yourself the best chance of success with 
                 <span class="font-bold">Upshoot Technologies</span>
             </h2>
+            <a href="/" class="bg-orange-500 font-medium mt-5 px-8 py-3 rounded text-white">Request a quote</a>
+        </div>
+        <!-- Picture Slides -->
+        <div class="slides flex justify-center w-full mt-10">
+            <div class="slides">
+                <div class="slide-item">
+                    <!-- <h2>Hello world</h2> -->
+                    <img src="assets/img/slide1.svg" class="h-slide" alt="">
+                </div>
+            </div>
+            <div class="slide-controls flex flex-col items-center space-y-1">
+                <span class="h-3 w-3 bg-white block rounded-full"></span>
+                <span class="h-2 w-2 bg-gray-500 block rounded-full"></span>
+                <span class="h-2 w-2 bg-gray-500 block rounded-full"></span>
+            </div>
         </div>
     </header>
-    <div class="block w-full h-screen bg-green">
-        Hola!
-    </div>
+    <main class="block w-full h-screen bg-white">
+        
+    </main>
 </body>
 </html>
