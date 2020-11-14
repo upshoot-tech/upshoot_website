@@ -9,3 +9,8 @@
 .card{
     @apply bg-white shadow flex flex-col text-center items-center justify-center w-20 py-5 px-12;
 }
+
+.stripes-bg{
+    @apply absolute;
+    background-image: url('../assets/img/stripes.svg');
+}
