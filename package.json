@@ -1,0 +1,29 @@
+{
+  "name": "upshoot_website",
+  "version": "1.0.0",
+  "description": "Website for upshoot",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss style/app.css -o dist/app.css -w --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/upshoot-tech/upshoot_website.git"
+  },
+  "author": "Upshoot Technologiess",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/upshoot-tech/upshoot_website/issues"
+  },
+  "homepage": "https://github.com/upshoot-tech/upshoot_website#readme",
+  "dependencies": {
+    "tailwindcss": "^1.9.6"
+  },
+  "devDependencies": {
+    "postcss": "^8.1.7",
+    "postcss-cli": "^8.2.0",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
+  }
+}
