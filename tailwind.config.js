@@ -13,6 +13,12 @@ module.exports = {
       backgroundColor: theme =>  ({
         upshootOrange: 'linear-gradient(265.51deg, #F27137 0%, #F26037 100%)'
       }),
+      fontFamily: {
+        primary: 'Source Sans Pro, sans-serif'
+      },
+      textColor: {
+        blue: '#172363'
+      }
     },
   },
   variants: {},
