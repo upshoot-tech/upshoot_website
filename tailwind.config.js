@@ -18,6 +18,12 @@ module.exports = {
       },
       textColor: {
         blue: '#172363'
+      },
+      width:{
+        20: '20%',
+      },
+      boxShadow: {
+        'icon': '0px 11px 15px -10px rgba(49, 49, 86, 0.3)',
       }
     },
   },
