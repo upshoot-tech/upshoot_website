@@ -5,3 +5,9 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@import url("components/cards.css");
+
+/* .card{
+    @apply bg-white shadow flex flex-col items-center justify-center py-5 px-12;
+} */
