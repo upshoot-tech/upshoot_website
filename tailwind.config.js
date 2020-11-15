@@ -11,7 +11,8 @@ module.exports = {
         slide: '460px',
       },
       backgroundColor: theme =>  ({
-        upshootOrange: 'linear-gradient(265.51deg, #F27137 0%, #F26037 100%)'
+        upshootOrange: 'linear-gradient(265.51deg, #F27137 0%, #F26037 100%)',
+        gray: '#F2F2F2',
       }),
       fontFamily: {
         primary: 'Source Sans Pro, sans-serif'
