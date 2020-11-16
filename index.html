@@ -19,7 +19,7 @@
                 <li><a href="/team">Team</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul>
-            <button class="bg-white border-none">
+            <button class="flex sm:hidden bg-white border-none">
                 <span>-</span>
                 <span>-</span>
             </button>
@@ -49,7 +49,7 @@
             </div>
         </div>
     </header>
-    <main class="block w-full h-screen bg-white mt-48 px-20">
+    <main class="block w-full h-screen bg-white mt-10 sm:mt-48 sm:px-20">
         <section class="w-3/4 m-auto font-primary">
             <h2 class="text-3xl text-center text mb-4 text-blue">Who We Are.</h2>
             <p class="text-center text-base">
@@ -59,21 +59,22 @@
                 lasting solutions.
             </p>
         </section>
+        <!-- Cards Section -->
         <section class="m-auto font-primary mb-20">
-            <div class="flex flex-row justify-center mt-10 space-x-8">
-                <div class="card">
+            <div class="flex sm:flex-row flex-col justify-center mt-10 sm:space-x-8 space-y-8">
+                <div class="bg-white shadow flex flex-col text-center items-center justify-center sm:w-20 w-full py-5 px-12">
                     <img src="assets/img/001-medal.svg" class="h-40" alt="">
                     <h2>Quality in all our services</h2>
                 </div>
-                <div class="card">
+                <div class="bg-white shadow flex flex-col text-center items-center justify-center sm:w-20 w-full py-5 px-12">
                     <img src="assets/img/002-transparency.svg" class="h-40" alt="">
                     <h2>Honesty in all our dealings</h2>
                 </div>
-                <div class="card">
+                <div class="bg-white shadow flex flex-col text-center items-center justify-center sm:w-20 w-full py-5 px-12">
                     <img src="assets/img/003-chronometer.svg" class="h-40" alt="">
                     <h2>Timeliness in all our Endeavours</h2>
                 </div>
-                <div class="card">
+                <div class="bg-white shadow flex flex-col text-center items-center justify-center sm:w-20 w-full py-5 px-12">
                     <img src="assets/img/004-secure.svg" class="h-40" alt="">
                     <h2>Products you can rely on</h2>
                 </div>
@@ -85,11 +86,12 @@
                 Our mission is to be a Technical & Creative partner to Start-ups, Founders, Entrepreneurs and Enterprises in bridging and building the gap towards technological & Innovative solutions.
             </h2>
         </section>
-        <section class="-mx-20 bg-upshoot-gray p-20">
+        <!-- Our Process Area -->
+        <section class="sm:-mx-20 bg-upshoot-gray sm:p-20 p-10">
             <h2 class="text-3xl text-blue text-center font-primary capitalize mb-20">
                 Be involved with our process.
             </h2>
-            <div class="flex flex-row justify-center">
+            <div class="flex flex-col sm:flex-row justify-center">
                 <div class="flex flex-col items-end mr-10 py-10">
                     <svg width="200" class="mb-12" height="2" viewBox="0 0 200 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="200" height="2" fill="#F36B21"/>
@@ -103,7 +105,7 @@
                     <div class="-ml-16 bg-gradient-to-tl from-upshoot-light-orange to-upshoot-dark-orange h-48 rounded w-32"></div>
                 </div>
             </div>
-            <div class="flex flex-row justify-center">
+            <div class="flex flex-col sm:flex-row justify-center">
                 <div class="flex flex-row items-center">
                     <div class="-mr-16 bg-gradient-to-tl from-upshoot-light-orange to-upshoot-dark-orange h-48 rounded w-32"></div>
                     <img src="/assets/img/product-development.svg" class="w-10/12 z-10" alt="">
@@ -117,7 +119,7 @@
                     </h2>
                 </div>
             </div>
-            <div class="flex flex-row justify-center">
+            <div class="flex flex-col sm:flex-row justify-center">
                 <div class="flex flex-col items-end mr-10 py-10">
                     <svg width="200" class="mb-12" height="2" viewBox="0 0 200 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="200" height="2" fill="#F36B21"/>
@@ -133,7 +135,7 @@
             </div>
         </section>
         <section class="bg-white px-5 py-20">
-            <div class="flex flex-row mb-20">
+            <div class="flex sm:flex-row flex-col mb-20">
                 <div class=" py-20 pr-8">
                     <h2 class="text-3xl text-blue text-left font-primary capitalize pb-8">
                         Loved by businesses <br> and individuals across the globe..
@@ -151,7 +153,7 @@
             </div>
         </section>
         <section style="background-image: url('/assets/img/Rectangle\ 83.svg');" class="-mx-20 bg-cover bg-no-repeat">
-            <div class="bg-white border mx-20 px-20 rounded">
+            <div class="bg-white border sm:mx-20 px-20 rounded">
                 <h2 class="text-3xl text-blue text-center font-primary capitalize p-8">
                     Let’s have this talk
                 </h2>
