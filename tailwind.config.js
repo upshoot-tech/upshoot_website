@@ -30,6 +30,7 @@ module.exports = {
       },
       boxShadow: {
         'icon': '0px 11px 15px -10px rgba(49, 49, 86, 0.3)',
+        orange: '0px 24px 38px rgba(242, 113, 55, 0.14), 0px 9px 46px rgba(242, 113, 55, 0.12), 0px 11px 25px -20px rgba(242, 113, 55, 0.3)',
       }
     },
   },
