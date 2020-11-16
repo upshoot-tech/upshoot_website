@@ -6,10 +6,6 @@
 
 @tailwind utilities;
 
-.card{
-    @apply bg-white shadow flex flex-col text-center items-center justify-center sm:w-20 w-full py-5 px-12;
-}
-
 .stripes-bg{
     @apply absolute;
     background-image: url('../assets/img/stripes.svg');
