@@ -7,22 +7,26 @@
     <title>Home</title>
 </head>
 <body>
-    <header style="background-image: url('/assets/img/home-hero.svg');" class="h-70 w-full py-8 px-20">
+    <header style="background-image: url('/assets/img/home-hero.svg');" class="h-70 w-full py-10 px-5 sm:py-8 sm:px-20">
         <!-- Navigation Area -->
         <nav class="flex flex-row justify-between">
             <a href="/" class="nav-brand">
                 <img src="/assets/img/Logo.svg" alt="Upshoot Technologies" class="h-10">
             </a>
-            <ul class="list-none flex space-x-4 text-white">
+            <ul class="hidden sm:flex list-none space-x-4 text-white">
                 <li><a href="/">Home</a></li>
                 <li><a href="/projects">Projects</a></li>
                 <li><a href="/team">Team</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul>
+            <button class="bg-white border-none">
+                <span>-</span>
+                <span>-</span>
+            </button>
         </nav>
         <!-- CTA Area -->
         <div class="flex flex-col justify-center items-center mt-16">
-            <h2 class="text-2xl text-center text-white w-5/12">
+            <h2 class="text-2xl text-center text-white sm:w-5/12">
                 Give yourself the best chance of success with 
                 <span class="font-bold">Upshoot Technologies</span>
             </h2>
@@ -35,7 +39,7 @@
             <div class="slides">
                 <div class="slide-item">
                     <!-- <h2>Hello world</h2> -->
-                    <img src="assets/img/slide1.svg" class="h-slide" alt="">
+                    <img src="assets/img/slide1.svg" class="sm:h-slide" alt="">
                 </div>
             </div>
             <div class="slide-controls cursor-pointer flex flex-col items-center space-y-1">
