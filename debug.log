@@ -1,3 +1,0 @@
-[1117/142800.180:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
-[1117/145434.151:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\SAMUEL\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\08d44ebf-cf91-41e3-90aa-872c8141b6db: The system cannot find the path specified. (0x3)
-[1117/145434.261:ERROR:http_transport_win.cc(276)] WinHttpSendRequest: The operation completed successfully. (0x0)
