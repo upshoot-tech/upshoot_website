@@ -1,0 +1,32 @@
+ 
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+   height: 70vh;
+  overflow: hidden;
+}
+ Hide the images by default 
+.mySlides {
+  display: none;
+}
+
+
+/* Fading animation */
+.slide {
+  -webkit-animation-name: slide;
+  -webkit-animation-duration: 1.5s;
+  animation-name: slide;
+  animation-duration: 500ms;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes slide {
+  from {transform: translateY(-330px);}
+  to {transform: translateY(0px);}
+}
+
+@keyframes slide {
+    from {transform: translateY(-330px);}
+  to {transform: translateY(0px);}
+}
+
