@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/app.css">
+    <link rel="stylesheet" href="style/slider.css">
     <title>Home</title>
 </head>
 
@@ -37,17 +38,22 @@
             </a>
         </div>
         <!-- Picture Slides -->
-        <div class="slides flex justify-center w-full mt-10">
-            <div class="slides">
-                <div class="slide-item">
-                    <!-- <h2>Hello world</h2> -->
+        <div class="slides flex justify-center mt-10">
+            <div class="slideshow-container">
+                <div class="slide-item mySlides slide">
                     <img src="assets/img/slide1.svg" class="sm:h-slide" alt="">
                 </div>
+                <div class="slide-item mySlides slide">
+                    <img src="assets/img/slide2.svg" class="sm:h-slide" alt="">
+                </div>
+                <div class="slide-item mySlides slide">
+                    <img src="assets/img/slide3.svg" class="sm:h-slide" alt="">
+                </div>
             </div>
-            <div class="slide-controls cursor-pointer flex flex-col items-center space-y-1">
-                <span class="h-3 w-3 bg-white block rounded-full"></span>
-                <span class="h-2 w-2 bg-gray-500 block rounded-full"></span>
-                <span class="h-2 w-2 bg-gray-500 block rounded-full"></span>
+            <div class="slide-controls cursor-pointer ml-5 flex flex-col items-center space-y-1">
+                <span class="h-3 w-3 bg-white block rounded-full dot" onclick="currentSlide(1)"></span>
+                <span class="h-2 w-2 bg-gray-500 block rounded-full dot" onclick="currentSlide(2)"></span>
+                <span class="h-2 w-2 bg-gray-500 block rounded-full dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
     </header>
@@ -230,6 +236,7 @@
             </footer>
         </section>
     </main>
+    <script src="assets/js/slider.js"></script>
 </body>
 
 </html>
