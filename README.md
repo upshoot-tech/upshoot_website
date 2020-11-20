@@ -1,2 +1,2 @@
-# upshoot_website
+# upshoot
 Upshoot-tech website
