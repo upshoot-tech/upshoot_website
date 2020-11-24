@@ -1,12 +1,33 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+let slideIndex = 0;
 
-// Thumbnail image controls
+let pause = () => {
+   clearInterval(myTimer);
+}
+
+let resume = () =>{
+   clearInterval(myTimer);
+   myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
+}
+
+
+function plusSlides(n){
+  clearInterval(myTimer);
+  if (n < 0){
+    showSlides(slideIndex -= 1);
+  } else {
+   showSlides(slideIndex += 1); 
+  }
+  if (n === -1){
+    myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+  } else {
+    myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  }
+}
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
+  var slides = document.getElementsByClassName("mySlides");
 
   if (n > slides.length) {
     slideIndex = 1
@@ -25,9 +46,18 @@ function showSlides(n) {
   dots[slideIndex-1].className += " bg-gray-500";
 }
 
-function currentSlide(n) {
+window.addEventListener("load",function() {
+    showSlides(slideIndex);
+    myTimer = setInterval(function(){plusSlides(1)}, 2000);
+})
+
+function currentSlide(n){
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 2000);
   showSlides(slideIndex = n);
 }
 
-
+var slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+slideshowContainer.addEventListener('mouseenter', pause)
+slideshowContainer.addEventListener('mouseleave', resume)
 
